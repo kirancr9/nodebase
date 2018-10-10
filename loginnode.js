@@ -12,11 +12,11 @@ app.get("/",function(req,res){
 
 app.post("/home",function(req,res){
 if(req.body.uname == "kiran" && req.body.pass =="123"){
-    res.sendFile(__dirname+"/home.html");
+    res.sendfile("./home.html");
 }
 else
 {
-    res.sendFile(__dirname+"/login.html");
+    res.sendfile("./login.html");
 }
 
 })
